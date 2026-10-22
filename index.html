@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelVista | Explore Beautiful Pakistan</title>
+  <meta name="description" content="Discover Pakistan's beautiful destinations, including Hunza, Skardu, Swat and Murree. Explore travel guides, attractions and travel tips.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #18332e;
+      background: #f8faf8;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 7%;
+      background: white;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .logo { font-size: 26px; font-weight: bold; color: #147d64; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: #24443c; font-size: 14px; }
+    .hero {
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      padding: 65px 8%;
+      color: white;
+      background: linear-gradient(90deg, #102d28dd, #102d2820),
+      url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1800&q=85') center/cover;
+    }
+    .hero-content { max-width: 650px; }
+    .hero small { text-transform: uppercase; letter-spacing: 3px; }
+    h1 { font-size: clamp(38px, 6vw, 66px); margin: 18px 0; }
+    .hero p { font-size: 18px; line-height: 1.7; }
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 24px;
+      background: #f2b84b;
+      color: #18332e;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    section { padding: 60px 7%; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 { font-size: 32px; margin-bottom: 10px; }
+    .section-title p { color: #64756f; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px #163d3010;
+    }
+    .card img { width: 100%; height: 210px; object-fit: cover; display: block; }
+    .card-content { padding: 20px; }
+    .card h3 { margin-top: 0; }
+    .card p { color: #64756f; line-height: 1.6; font-size: 14px; }
+    .card a { color: #147d64; text-decoration: none; font-weight: bold; }
+    .guides { background: #eaf3ee; }
+    .guide-list {
+      max-width: 800px;
+      margin: auto;
+      line-height: 2.2;
+    }
+    footer {
+      padding: 35px 7%;
+      background: #183b33;
+      color: white;
+      text-align: center;
+    }
+    footer a { color: #f2cb78; margin: 0 8px; text-decoration: none; }
+    @media (max-width: 600px) {
+      header { padding: 18px 5%; }
+      nav { gap: 12px; }
+      .hero { min-height: 420px; padding: 45px 6%; }
+      section { padding: 45px 5%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TravelVista</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#guides">Travel Guides</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <small>Discover Pakistan</small>
+        <h1>Find Your Next Adventure</h1>
+        <p>Explore breathtaking mountains, peaceful valleys and the hidden beauty of Pakistan with TravelVista.</p>
+        <a class="btn" href="#destinations">Explore Destinations →</a>
+      </div>
+    </section>
+
+    <section id="destinations">
+      <div class="section-title">
+        <h2>Popular Destinations</h2>
+        <p>Discover some of the most beautiful places in Pakistan.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1566837497312-7be7830ae9b1?auto=format&fit=crop&w=700&q=80" alt="Hunza Valley mountains">
+          <div class="card-content">
+            <h3>Hunza Valley</h3>
+            <p>Explore majestic mountains, beautiful valleys and the charm of northern Pakistan.</p>
+            <a href="#guides">Explore Hunza →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=80" alt="Snow covered mountains">
+          <div class="card-content">
+            <h3>Skardu</h3>
+            <p>Discover dramatic mountain scenery, lakes and unforgettable outdoor adventures.</p>
+            <a href="#guides">Explore Skardu →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=80" alt="Lush green forest">
+          <div class="card-content">
+            <h3>Swat Valley</h3>
+            <p>Enjoy lush green landscapes, rivers and refreshing mountain escapes.</p>
+            <a href="#guides">Explore Swat →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Beautiful scenic landscape">
+          <div class="card-content">
+            <h3>Murree</h3>
+            <p>Plan a relaxing hill-station visit with scenic views and cool mountain air.</p>
+            <a href="#guides">Explore Murree →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="guides" id="guides">
+      <div class="section-title">
+        <h2>Travel Guides & Tips</h2>
+        <p>Prepare for your next trip with these useful travel topics.</p>
+      </div>
+      <div class="guide-list">
+        <p>✈️ How to plan a trip to Northern Pakistan</p>
+        <p>🎒 Essential packing list for mountain trips</p>
+        <p>📅 Best time to visit Hunza Valley</p>
+        <p>💰 How to plan a travel budget</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title">
+        <h2>About TravelVista</h2>
+        <p>TravelVista helps travellers discover destinations, plan trips and learn about Pakistan's natural beauty.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>TravelVista</h2>
+    <p>Your guide to exploring beautiful Pakistan.</p>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#guides">Travel Guides</a>
+    <p>© 2026 TravelVista. All rights reserved.</p>
+  </footer>
+</body>
+</html>
